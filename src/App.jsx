@@ -18,6 +18,10 @@ function App() {
     try {
       const res = await signInWithGoogle();
 
+      if (!res.accessToken) {
+        throw Error('login failed');
+      }
+
       let { displayName, email, photoURL } = res;
       setUserInfo((prev) => ({ ...prev, displayName, email, photoURL }));
 
@@ -26,7 +30,10 @@ function App() {
       setUserLoading(false);
       // }, 1000);
     } catch (error) {
-      console.log(error.message);
+      // console.log('err msg', error.message);
+      alert(error.message);
+      setUserLoading(false);
+      return false;
     }
   }
 
