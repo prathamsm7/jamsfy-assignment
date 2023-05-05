@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #040406;
+  color: #3470c1;
+}
+
+.navbar {
+  background: #0b0819;
+}
+
+table,
+th,
+td {
+  border: 1px solid #5a5a5a;
+  border-collapse: collapse;
+  background-color: #1c1731;
+  color: #627eea;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+th span,
+td span {
+  background-color: #2e2946 !important;
+}
+
+.logo {
+  background: linear-gradient(94.37deg, #3387d5 -5.94%, #7a06c9 115.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
