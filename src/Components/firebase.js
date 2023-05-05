@@ -17,13 +17,13 @@ import {
 // For Firebase JS SDK v7.20.0 and later, measurementId is option al
 
 export const firebaseConfig = {
-  apiKey: 'AIzaSyAScyTnFyHG3TbQQaPgd4k8wiUwTTAcaBU',
-  authDomain: 'jamsfy-e1ef4.firebaseapp.com',
-  projectId: 'jamsfy-e1ef4',
-  storageBucket: 'jamsfy-e1ef4.appspot.com',
-  messagingSenderId: '376384490433',
-  appId: '1:376384490433:web:27a73dbecd58f3f749fd40',
-  measurementId: 'G-4ZK922B428',
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
